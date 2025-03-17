@@ -2,42 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 249, 250, 251;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
-}
-
-/* Базовые анимации */
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Стилизация скроллбара */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #d1d5db;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
-}
-
 /* Стили для кнопок */
 .btn {
     @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out;
@@ -54,6 +18,11 @@ body {
 
 .card:hover {
     @apply transform scale-105 shadow-xl;
+}
+
+/* Фон для всей страницы */
+body {
+    @apply bg-gray-100;
 }
 
 /* Анимация появления */
