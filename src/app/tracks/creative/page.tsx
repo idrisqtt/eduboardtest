@@ -2,54 +2,54 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Code, Database, Cpu, Cog, Layers } from 'lucide-react';
+import { ArrowLeft, Paintbrush, Music, Camera, Film, Palette } from 'lucide-react';
 
-export default function EngineeringTracks() {
+export default function CreativeTracks() {
   const courses = [
     {
-      id: 1,
-      title: 'Разработка веб-приложений',
-      description: 'Изучение современных технологий веб-разработки, включая React, Next.js и Node.js.',
-      icon: <Code className="h-6 w-6" />,
+      id: 6,
+      title: 'Графический дизайн',
+      description: 'Изучение основ графического дизайна, работа с Adobe Creative Suite и создание визуальных проектов.',
+      icon: <Paintbrush className="h-6 w-6" />,
       duration: '8 недель',
-      level: 'Средний',
-      color: 'blue'
-    },
-    {
-      id: 2,
-      title: 'Анализ данных и машинное обучение',
-      description: 'Основы анализа данных, статистики и построения моделей машинного обучения.',
-      icon: <Database className="h-6 w-6" />,
-      duration: '10 недель',
-      level: 'Продвинутый',
+      level: 'Начальный',
       color: 'purple'
     },
     {
-      id: 3,
-      title: 'Робототехника и автоматизация',
-      description: 'Проектирование и программирование роботов, основы автоматизации процессов.',
-      icon: <Cpu className="h-6 w-6" />,
-      duration: '12 недель',
-      level: 'Продвинутый',
-      color: 'green'
+      id: 7,
+      title: 'Музыкальное продюсирование',
+      description: 'Создание и обработка музыки, работа со звуком, основы композиции и аранжировки.',
+      icon: <Music className="h-6 w-6" />,
+      duration: '10 недель',
+      level: 'Средний',
+      color: 'pink'
     },
     {
-      id: 4,
-      title: '3D-моделирование и проектирование',
-      description: 'Создание трехмерных моделей и прототипов с использованием современных САПР.',
-      icon: <Layers className="h-6 w-6" />,
-      duration: '8 недель',
+      id: 8,
+      title: 'Фотография и обработка изображений',
+      description: 'Основы фотографии, композиция, работа со светом и постобработка в Adobe Lightroom и Photoshop.',
+      icon: <Camera className="h-6 w-6" />,
+      duration: '6 недель',
       level: 'Начальный',
+      color: 'blue'
+    },
+    {
+      id: 9,
+      title: 'Видеопроизводство и монтаж',
+      description: 'Съемка видео, работа с камерой, монтаж и постпродакшн в Adobe Premiere Pro и After Effects.',
+      icon: <Film className="h-6 w-6" />,
+      duration: '12 недель',
+      level: 'Продвинутый',
       color: 'orange'
     },
     {
-      id: 5,
-      title: 'Электронная инженерия',
-      description: 'Проектирование электронных схем, работа с микроконтроллерами и сенсорами.',
-      icon: <Cog className="h-6 w-6" />,
-      duration: '10 недель',
+      id: 10,
+      title: 'Цифровая живопись',
+      description: 'Основы цифрового рисования, работа с графическим планшетом, создание иллюстраций.',
+      icon: <Palette className="h-6 w-6" />,
+      duration: '8 недель',
       level: 'Средний',
-      color: 'red'
+      color: 'green'
     }
   ];
 
@@ -75,14 +75,14 @@ export default function EngineeringTracks() {
         text: 'text-orange-600',
         border: 'border-orange-200'
       },
-      red: {
-        bg: 'bg-red-100',
-        text: 'text-red-600',
-        border: 'border-red-200'
+      pink: {
+        bg: 'bg-pink-100',
+        text: 'text-pink-600',
+        border: 'border-pink-200'
       }
     };
 
-    return colorMap[color] || colorMap.blue;
+    return colorMap[color] || colorMap.purple;
   };
 
   return (
@@ -90,14 +90,14 @@ export default function EngineeringTracks() {
       <div className="mb-12">
         <Link 
           href="/programs" 
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6"
+          className="inline-flex items-center text-purple-600 hover:text-purple-800 mb-6"
         >
           <ArrowLeft className="h-4 w-4 mr-2" /> Вернуться к программам
         </Link>
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Инженерные направления</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">Творческие направления</h1>
         <p className="text-xl text-gray-600 max-w-3xl">
-          Выберите курс из нашей коллекции инженерных направлений, разработанных 
-          для развития технических навыков и инженерного мышления.
+          Выберите курс из нашей коллекции творческих направлений, разработанных 
+          для развития художественных навыков и креативного мышления.
         </p>
       </div>
 
@@ -141,7 +141,7 @@ export default function EngineeringTracks() {
         })}
       </div>
 
-      <div className="mt-12 p-6 bg-blue-50 rounded-lg">
+      <div className="mt-12 p-6 bg-purple-50 rounded-lg">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Не нашли подходящий курс?</h2>
         <p className="text-gray-600 mb-6">
           Мы постоянно обновляем нашу коллекцию курсов. Если вы не нашли то, что искали, 
@@ -149,7 +149,7 @@ export default function EngineeringTracks() {
         </p>
         <Link
           href="/contact"
-          className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-colors"
+          className="px-6 py-3 bg-purple-600 text-white font-medium rounded-lg shadow-md hover:bg-purple-700 transition-colors"
         >
           Связаться с нами
         </Link>
