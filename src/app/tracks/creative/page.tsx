@@ -128,7 +128,7 @@ export default function CreativeTracks() {
                 </div>
               </div>
               <div className="p-4 bg-gray-50 flex justify-between items-center">
-                <span className="text-sm text-gray-500">Начало: 1 сентября 2023</span>
+                <span className="text-sm text-gray-500">Начало: 1 сентября 2025</span>
                 <Link
                   href={`/courses/${course.id}`}
                   className={`px-4 py-2 rounded-lg ${colorClasses.bg} ${colorClasses.text} hover:opacity-90 transition-opacity`}

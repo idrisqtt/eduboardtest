@@ -17,7 +17,7 @@ export default function CourseDetails() {
     description: 'Подробное описание курса будет здесь.',
     duration: '8 недель',
     level: 'Средний',
-    startDate: '1 сентября 2023',
+    startDate: '1 сентября 2025',
     modules: [
       { id: 1, title: 'Введение в курс', duration: '1 неделя' },
       { id: 2, title: 'Основные концепции', duration: '2 недели' },
