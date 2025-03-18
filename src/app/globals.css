@@ -288,8 +288,8 @@ body {
 
 .brain-divider {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 20%;
+  bottom: 20%;
   left: 50%;
   width: 1px;
   background: linear-gradient(to bottom, 
