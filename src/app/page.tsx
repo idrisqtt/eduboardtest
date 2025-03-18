@@ -8,9 +8,6 @@ export default function Home() {
     <div className="max-w-7xl mx-auto">
       {/* Hero секция с концепцией "двух полушарий" */}
       <div className="relative overflow-hidden min-h-screen flex items-center brain-container">
-        {/* Разделение на "полушария" */}
-        <div className="brain-divider"></div>
-        
         {/* Фоновые волны для технического и творческого */}
         <div className="brain-wave tech top-20"></div>
         <div className="brain-wave creative top-40"></div>
@@ -43,9 +40,9 @@ export default function Home() {
             </Link>
             <Link
               href="/register"
-              className="group px-8 py-4 bg-white text-blue-600 font-medium rounded-xl border-2 border-transparent gradient-border hover:shadow-lg transition-all duration-300"
+              className="split-button group relative px-8 py-4 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <span className="dual-gradient-text flex items-center justify-center">
+              <span className="relative z-10 flex items-center justify-center">
                 Зарегистрироваться
                 <Users className="ml-2 h-5 w-5" />
               </span>
