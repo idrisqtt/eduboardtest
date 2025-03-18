@@ -1,3 +1,4 @@
+/* Updated CSS 2025-03-18 */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -514,14 +515,15 @@ body {
 }
 
 /* Убираем пунктирную линию для первого островка */
-.island:first-child::before {
-  display: none;
+.island:first-of-type::before {
+  display: none !important;
+  background: none !important;
 }
 
-.island:first-child {
-  border: none;
+.island:first-of-type {
+  border: none !important;
 }
 
-.island:first-child:hover::before {
-  display: none;
+.island:first-of-type:hover::before {
+  display: none !important;
 } 

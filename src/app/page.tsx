@@ -10,15 +10,6 @@ export default function Home() {
       <div className="relative overflow-hidden min-h-screen flex items-center brain-container">
         {/* Разделение на "полушария" */}
         <div className="brain-divider"></div>
-        <div className="brain-connector top">
-          <Brain className="h-5 w-5 text-blue-500" />
-        </div>
-        <div className="brain-connector middle">
-          <Brain className="h-5 w-5 text-purple-500" />
-        </div>
-        <div className="brain-connector bottom">
-          <Brain className="h-5 w-5 text-pink-500" />
-        </div>
         
         {/* Фоновые волны для технического и творческого */}
         <div className="brain-wave tech top-20"></div>
