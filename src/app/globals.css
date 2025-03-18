@@ -515,10 +515,13 @@ body {
 
 /* Убираем пунктирную линию для первого островка */
 .island:first-child::before {
-  background: none;
-  opacity: 0;
+  display: none;
+}
+
+.island:first-child {
+  border: none;
 }
 
 .island:first-child:hover::before {
-  opacity: 0;
+  display: none;
 } 
